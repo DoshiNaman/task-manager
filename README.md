@@ -15,9 +15,13 @@ A simple and intuitive task management application built with React and Material
 ## Features
 
 - Add, delete, and toggle task completion
-- Filter tasks by title and date
+- Filter tasks by title, date and toggle task completion
 - Dark and light mode themes
 - Responsive design
+- **Performance Techniques**:
+  - **Memoization**: Utilized React's `useMemo` and `React.memo` to prevent unnecessary re-renders and optimize performance.
+  - **Debouncing**: Implemented debouncing for the search input to reduce the number of state updates and improve responsiveness.
+  - **Virtualization**: Used `react-window` for rendering large lists efficiently, ensuring smooth scrolling and reduced rendering time.
 
 ## Technologies Used
 
@@ -48,7 +52,6 @@ To get started with this project, follow these steps:
 
 To run the application in development mode, use the following command:
 
-
 ```bash
    npm run dev
    ```
@@ -63,9 +66,7 @@ To run the tests for this application, use the following command:
    npm run test
    ```
 
-
 This will execute the test suite using Jest.
-
 
 ## License
 
